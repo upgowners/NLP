@@ -2,20 +2,21 @@
 """
 Created on Fri Apr 22 15:24:44 2022
 
-@author: Aayush Shah
+@author: Ankit Patel
 """
 
 
-
-def word_count(str): 
-    counts = dict() 
-    str=str.lower() 
+def word_count(str):
+    counts = dict()
+    str = str.lower()
     words = str.split()
 
     for word in words:
         if word in counts:
-            counts[word] += 1 
+            counts[word] += 1
         else:
-            counts[word] = 1 
+            counts[word] = 1
     return counts
-print( word_count('The Quick Brown fox jumps over the lazy dog.'))
+
+
+print(word_count('The Quick Brown fox jumps over the lazy dog.'))

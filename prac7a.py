@@ -2,7 +2,7 @@
 """
 Created on Fri Apr 22 18:18:29 2022
 
-@author: Aayush Shah
+@author: Ankit Patel
 """
 
 import nltk
@@ -16,7 +16,7 @@ N -> 'cake' | 'birthday'
 V -> 'baked'
 P -> 'on'
 """)
-sent = ['I', 'baked', 'a', 'cake', 'on', 'my', 'birthday'] 
-parser = nltk.ChartParser(groucho_grammar) 
+sent = ['I', 'baked', 'a', 'cake', 'on', 'my', 'birthday']
+parser = nltk.ChartParser(groucho_grammar)
 for tree in parser.parse(sent):
     print(tree)

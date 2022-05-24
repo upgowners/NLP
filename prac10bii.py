@@ -2,7 +2,7 @@
 """
 Created on Sat Apr 23 20:17:43 2022
 
-@author: Aayush Shah
+@author: Ankit Patel
 """
 
 import nltk
@@ -17,10 +17,10 @@ CC -> "and" [0.9] | "or" [0.1]
 
 print(grammar)
 
-viterbi_parser = nltk.ViterbiParser(grammar) 
+viterbi_parser = nltk.ViterbiParser(grammar)
 token = "old men and women".split()
 obj = viterbi_parser.parse(token)
 
-print("Output: ") 
+print("Output: ")
 for x in obj:
     print(x)
